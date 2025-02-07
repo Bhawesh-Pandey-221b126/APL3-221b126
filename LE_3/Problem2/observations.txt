@@ -1,0 +1,5 @@
+In the Test class (part a), the class implements the Testable interface and provides a concrete implementation of the display() method. This works fine because the interface method is implicitly public, and Test implements it with the required public access modifier.
+
+In the AbsTest abstract class (part b), the display() method is not implemented, and that's perfectly valid. Since AbsTest is abstract, it doesn't need to provide an implementation, but any non-abstract subclass (like ConcreteTest) must implement the display() method.
+
+Key Point: The display() method in the interface is implicitly public, so even though we don't explicitly write public in the method declaration within the interface, the implementation must match the public access modifier.
